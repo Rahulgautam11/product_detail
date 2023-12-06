@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 import ring from '../../assets/Images/ring.jpg'
 import ring1 from '../../assets/Images/ring1.avif'
@@ -117,7 +117,7 @@ const ProductDetail = () => {
 
                                     {
                                         item.img ?
-                                            <img src={item.img && item.img} alt='banner-img' />
+                                            <img src={item.img && item.img} alt='product-img' />
                                             :
                                             <Video src={item.vid} onPlay={HandlePlay} onSound={HandleSound} mute={mute} play={play} />
                                     }
@@ -137,7 +137,7 @@ const ProductDetail = () => {
                                     {key === 0 ? <span className='count_product'><p>+4</p></span> : ""}
                                     {key === ImageData.length - 1 ? <span className='count_product'><p>+14</p></span> : ""}
                                     {item.img ?
-                                        <img src={item.img && item.img} alt='banner-img' />
+                                        <img src={item.img && item.img} alt='product-img' />
                                         :
                                         <Video src={item.vid} gride={true} onPlay={HandlePlay} play={play} />
                                     }
@@ -168,7 +168,6 @@ const ProductDetail = () => {
                     <p>Free Garnet & Diamond Shell Pendant Earrings worth &#36;358</p>
                     <div className='image_wrap'>
                         <figure><img src={ring} alt="img" /></figure>
-                        <figure><img src={ring3} alt="img" /></figure>
                     </div>
                 </div>
                 <div className="offer_btn">
