@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 
 import ring from '../../assets/Images/ring.jpg'
-import ring1 from '../../assets/Images/ring1.avif'
-import ring2 from '../../assets/Images/ring2.avif'
+import ring1 from '../../assets/Images/ring1.jpg'
+import ring2 from '../../assets/Images/ring2.jpg'
 import ring3 from '../../assets/Images/ring3.jpg'
-import ring4 from '../../assets/Images/ring5.jpg'
+import ring4 from '../../assets/Images/ring4.jpg'
+import ring5 from '../../assets/Images/ring5.jpg'
 import video1 from '../../assets/videos/diamond1.mp4'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -38,11 +39,12 @@ const ProductDetail = () => {
         { img: ring2 },
         { img: ring3 },
         { img: ring4 },
-        { img: ring },
+        { img: ring5 },
         { img: ring1 },
         { img: ring2 },
         { img: ring3 },
         { img: ring4 },
+        { img: ring5 },
     ]
 
     const settings = {
