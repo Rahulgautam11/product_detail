@@ -27,11 +27,11 @@ const QualityRing = [
     { weight: "0.70 cts", img: ring },
     { weight: "0.90 cts", img: ring },
     { weight: "0.10 cts", img: ring },
-    { weight: "0.100 cts", img: ring },
-    { weight: "0.101 cts", img: ring },
-    { weight: "0.102 cts", img: ring },
-    { weight: "0.10 cts", img: ring },
-    { weight: "0.103 cts", img: ring },
+    { weight: "0.14 cts", img: ring },
+    { weight: "0.22 cts", img: ring },
+    { weight: "0.44 cts", img: ring },
+    { weight: "0.55 cts", img: ring },
+    { weight: "0.13 cts", img: ring },
 ]
 const Quality = () => {
     const [active, setActive] = useState(0)
