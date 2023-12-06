@@ -50,6 +50,26 @@
         .swiper_product {
             position: relative;
 
+            .swiper-wrapper {
+                padding-bottom: 10px;
+            }
+
+            .swiper-pagination {
+                bottom: 3px;
+                display: flex;
+
+                .swiper-pagination-bullet {
+                    height: 4px;
+                    width: 100%;
+                    border-radius: 0;
+                    margin: 0;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background-color: $base;
+                }
+            }
+
             .delivery_wrap {
                 padding: 4px;
                 background-color: rgba(245, 245, 246, 0.85);

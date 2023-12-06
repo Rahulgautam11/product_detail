@@ -8,7 +8,7 @@ import ring4 from '../../assets/Images/ring5.jpg'
 import video1 from '../../assets/videos/diamond1.mp4'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Navigation, Pagination, Thumbs } from "swiper/modules";
+import { FreeMode, Keyboard, Navigation, Pagination, Thumbs } from "swiper/modules";
 import './style.scss'
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -47,9 +47,14 @@ const ProductDetail = () => {
 
     const settings = {
         spaceBetween: 10,
-        Pagination: true,
+        pagination: {
+            clickable: true,
+        },
+        keyboard: {
+            enabled: true,
+        },
         thumbs: { swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null },
-        modules: [FreeMode, Thumbs, Pagination],
+        modules: [FreeMode, Thumbs, Pagination, Keyboard],
         className: 'mySwiper2',
     }
     const settings2 = {
@@ -99,7 +104,7 @@ const ProductDetail = () => {
             <div className={"product_detail mb-25"}>
                 <Swiper
                     {...settings}
-                    className={"swiper_product mb-10"}
+                    className={"swiper_product"}
                 >
                     <div className="delivery_wrap">
                         <i className="shipping_icon" />
